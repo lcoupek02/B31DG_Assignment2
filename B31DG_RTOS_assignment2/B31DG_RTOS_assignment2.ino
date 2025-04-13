@@ -73,7 +73,6 @@ float measureFrequency(int signal, int task, int timeout) {
     return frequency;
 }
 
-
 // Tasks to be done
 void Task1(void *pvParameters) {
     TickType_t xLastWakeTime;

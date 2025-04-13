@@ -12,7 +12,6 @@
 B31DGCyclicExecutiveMonitor monitor(1922);
 Ticker Cycle;
 
-
 void frame();
 void JobTask1();
 void JobTask2();
