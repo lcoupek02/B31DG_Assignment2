@@ -162,7 +162,7 @@ void TaskButton(void *pvParameters) {
   while (1) {
     vTaskDelayUntil(&xLastWakeTime, xFrequency);
 
-    if (xSemaphoreTake(buttonMutex, portMAX_DELAY) == pdTRUE) {
+    if (xSemaphoreTake(buttonMutex, portMAX_DELAY) == pdTRUE) {   //If button has been pressed Semaphore can be taken
       monitor.doWork();
       state = !state;
       digitalWrite(LED_TOGGLE, state);
